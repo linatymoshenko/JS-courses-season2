@@ -15,6 +15,7 @@ function sortArrayAscendingUseSort(array) {
 function sortArrayAscendingUseFor(array) {
   for (var firstIndex = 0; firstIndex < array.length; firstIndex++) {
     for (var secondIndex = 0; secondIndex < array.length - 1 - firstIndex; secondIndex++) {
+
       if (array[secondIndex] > array[secondIndex + 1]) {
         var temporary = array[secondIndex];
         array[secondIndex] = array[secondIndex + 1];
@@ -22,6 +23,7 @@ function sortArrayAscendingUseFor(array) {
       }
     }
   }
+
   return array;
 }
 

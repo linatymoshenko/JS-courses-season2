@@ -1,8 +1,8 @@
 "use strict";
 
 function sortArrayAscendingUseSort(array) {
-  function compareNumbers(number1, number2) {
-    return number1 - number2;
+  function compareNumbers(firstNumber, secondNumber) {
+    return firstNumber - secondNumber;
   }
 
   array.sort(compareNumbers);

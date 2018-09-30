@@ -10,4 +10,4 @@ function sumArrayElements(array) {
   return sum;
 }
 
-// sumArrayElements([1, 4, 6, 7, 9, 3]);
+sumArrayElements([1, 4, 6, 7, 9, 3]);

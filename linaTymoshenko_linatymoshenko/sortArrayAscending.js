@@ -27,4 +27,4 @@ function sortArrayAscendingUseFor(array) {
   return array;
 }
 
-// sortArrayAscendingUseFor([10, 9, 8, 7, 6, 5, 4, 3]);
+sortArrayAscendingUseFor([10, 9, 8, 7, 6, 5, 4, 3]);

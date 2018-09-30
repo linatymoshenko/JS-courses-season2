@@ -18,4 +18,4 @@ function getFibonacciNumbersArray(countNumbers) {
   return result;
 }
 
-// getFibonacciNumbersArray(8);
+getFibonacciNumbersArray(8);

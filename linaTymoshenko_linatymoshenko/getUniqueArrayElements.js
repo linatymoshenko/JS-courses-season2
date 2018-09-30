@@ -12,4 +12,4 @@ function getUniqueArrayElements(array) {
   return result;
 }
 
-// getUniqueArrayElements([1, 1, 1, 3, 2, 2]);
+getUniqueArrayElements([1, 1, 1, 3, 2, 2]);

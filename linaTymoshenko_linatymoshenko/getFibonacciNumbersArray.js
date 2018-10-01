@@ -2,17 +2,17 @@
 
 function getFibonacciNumbersArray(countNumbers) {
   var result = [];
+  var firstNumber = 0;
+  var nextNumber = 1;
 
   if (countNumbers >= 1) {
-    result.push(0);
+    result.push(firstNumber);
   }
 
-  if (countNumbers >= 2) {
-    result.push(1);
-  }
-
-  while (result.length < countNumbers) {
-    result.push(result[result.length - 1] + result[result.length - 2])
+  while (countNumbers >= 2) {
+    result.push(nextNumber);
+    nextNumber += result[result.length - 2];
+    countNumbers--;
   }
 
   return result;

@@ -1,9 +1,9 @@
-let firstArray = [1,2,3,4];
-let secondArray = [7,6,5,4,3];
+const firstArray = [1,2,3,4];
+const secondArray = [7,6,5,4,3];
 
 function getArrayDifference(firstArray, secondArray) {
-  let firstArrayFilter = firstArrayElement => {
-    let checkExistElement = secondArrayElement => firstArrayElement == secondArrayElement;
+  const firstArrayFilter = firstArrayElement => {
+    const checkExistElement = secondArrayElement => firstArrayElement == secondArrayElement;
 
     return !secondArray.find(checkExistElement);
   };

@@ -14,7 +14,7 @@ Object.defineProperties(user, {
   },
 
   userInfo: {
-    get: () => "My name is " + user.name + ". I am " + user.age + " years old. I am a " + user.profession
+    get: () => `My name is ${user.name}. I am ${user.age} years old. I am a ${user.profession}.`
   },
 
   businessCard: {
@@ -27,7 +27,7 @@ function BusinessCard(name, profession) {
   this.profession = profession;
 }
 
-user.getAnyUserInfo = function (property) {
+user.getUserInfo = function (property) {
   return this[property];
 };
 
@@ -36,4 +36,4 @@ console.log(user.businessCard);
 console.log(user.name);
 console.log(user.age);
 console.log(user.profession);
-console.log(user.getAnyUserInfo("name"));
+console.log(user.getUserInfo("name"));
